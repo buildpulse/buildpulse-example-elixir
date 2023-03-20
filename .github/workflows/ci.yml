@@ -5,16 +5,12 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        otp: ['25.3']
-        elixir: ['1.14.3']
     steps:
     - uses: actions/checkout@v3
     - uses: erlef/setup-beam@v1
       with:
-        otp-version: ${{matrix.otp}}
-        elixir-version: ${{matrix.elixir}}
+        otp-version: 25.3
+        elixir-version: 1.14.3
 
     - name: Restore Dependencies Cache
       uses: actions/cache@v3
@@ -31,13 +27,3 @@ jobs:
 
     - name: Testing
       run: mix test
-
-    # - name: Upload test results to BuildPulse for flaky test detection
-    #   if: '!cancelled()' # Run this step even when the tests fail. Skip if the workflow is cancelled.
-    #   uses: Workshop64/buildpulse-action@master
-    #   with:
-    #     account: 68192324 # Replace this value with your BuildPulse account ID
-    #     repository: 238705816 # Replace this value with your BuildPulse repository ID
-    #     path: spec/reports
-    #     key: ${{ secrets.BUILDPULSE_ACCESS_KEY_ID }}
-    #     secret: ${{ secrets.BUILDPULSE_SECRET_ACCESS_KEY }}
