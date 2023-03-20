@@ -10,11 +10,11 @@ jobs:
         otp: ['25.3']
         elixir: ['1.14.3']
     steps:
-      - uses: actions/checkout@v3
-      - uses: erlef/setup-beam@v1
-        with:
-          otp-version: ${{matrix.otp}}
-          elixir-version: ${{matrix.elixir}}
+    - uses: actions/checkout@v3
+    - uses: erlef/setup-beam@v1
+      with:
+        otp-version: ${{matrix.otp}}
+        elixir-version: ${{matrix.elixir}}
 
     - name: Restore Dependencies Cache
       uses: actions/cache@v2
