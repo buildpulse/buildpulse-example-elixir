@@ -5,15 +5,16 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        otp: ['25.3']
+        elixir: ['1.14.3']
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set up Elixir
-      uses: erlef/setup-elixir@885971a72ed1f9240973bd92ab57af8c1aa68f24
-      with:
-        elixir-version: '1.11.4' # Define the elixir version [required]
-        otp-version: '24' # Define the OTP version [required]
+      - uses: actions/checkout@v3
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: ${{matrix.otp}}
+          elixir-version: ${{matrix.elixir}}
 
     - name: Restore Dependencies Cache
       uses: actions/cache@v2
