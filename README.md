@@ -30,7 +30,7 @@ Don't see your CI provider? [Get in touch](mailto:hello@buildpulse.io?body=%3C%3
 ---
 
 <p>
-  <a href="https://buildpulse.io?utm_source=github.com&utm_campaign=example-repositories&utm_content=mocha-button">
+  <a href="https://buildpulse.io?utm_source=github.com&utm_campaign=example-repositories&utm_content=exunit-button">
     <img width="325" title="Automatically detect flaky Exunit tests with BuildPulse" alt="Try BuildPulse for free" src="https://user-images.githubusercontent.com/2988/86935247-9f059b80-c10a-11ea-9579-575b357e70d6.png">
   </a>
 </p>
