@@ -31,7 +31,7 @@ Don't see your CI provider? [Get in touch](mailto:hello@buildpulse.io?body=%3C%3
 
 <p>
   <a href="https://buildpulse.io?utm_source=github.com&utm_campaign=example-repositories&utm_content=mocha-button">
-    <img width="325" title="Automatically detect flaky Mocha tests with BuildPulse" alt="Try BuildPulse for free" src="https://user-images.githubusercontent.com/2988/86935247-9f059b80-c10a-11ea-9579-575b357e70d6.png">
+    <img width="325" title="Automatically detect flaky Exunit tests with BuildPulse" alt="Try BuildPulse for free" src="https://user-images.githubusercontent.com/2988/86935247-9f059b80-c10a-11ea-9579-575b357e70d6.png">
   </a>
 </p>
 
@@ -39,5 +39,5 @@ Automatically **detect flaky tests.** Focus on the top offenders to **quickly im
 
 👉 [Get started at buildpulse.io](https://buildpulse.io?utm_source=github.com&utm_campaign=example-repositories&utm_content=elixir-text-link)
 
-[commit-for-xml-reports]: https://github.com/buildpulse/buildpulse-example-mocha/commit/main~1
-[commit-for-buildpulse-integration]: https://github.com/buildpulse/buildpulse-example-mocha/commit/main
+[commit-for-xml-reports]: https://github.com/buildpulse/buildpulse-example-elixir/commit/5e1bd944fe9b858cf5eabed610ba736c7e8428b8
+[commit-for-buildpulse-integration]: https://github.com/buildpulse/buildpulse-example-elixir/commit/cec7f201ca7bbecf2b6e882ca4b04ca7cc750077
