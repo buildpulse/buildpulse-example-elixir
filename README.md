@@ -1,6 +1,6 @@
 # BuildPulse Example Project: Elixir + Exunit
 
-This is an example [Elixir](https://elixir-lang.org/) project demonstrating how to send test results to [BuildPulse](https://buildpulse.io) to help you detect, track, and eliminate flaky tests.
+This is an example [Elixir](https://elixir-lang.org/) project demonstrating how to send test results to [BuildPulse](https://buildpulse.io) to help you find and [fix flaky tests](https://buildpulse.io/products/flaky-tests).
 
 ## Connect Elixir Projects to BuildPulse
 
